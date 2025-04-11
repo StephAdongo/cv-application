@@ -28,7 +28,6 @@ function General ({handleDownload, handleLoadExample, handleClear}) {
       </button> */}
 
             </div>
-        
     );
 }
 
