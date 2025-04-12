@@ -18,7 +18,7 @@ function General({handleDownload, handleLoadExample, handleClear}) {
                 <button className="general-button download-btn" onClick={handleDownload}>
                     <Download size={16} />Download</button>
 
-            </div>
+        </div>
     );
 }
 
