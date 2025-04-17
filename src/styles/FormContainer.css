@@ -1,0 +1,6 @@
+.form-container {
+    height: 100vh;
+    margin-left: 170px;
+    overflow-y: auto;
+    padding-right: 12px;
+}
