@@ -1,0 +1,123 @@
+
+.personalDetails {
+    max-width: 500px;
+    margin-top: 7px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    }
+    
+    .personalHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding-bottom: 5px;
+    }
+  
+    .hr-border {
+      border: .1px solid #ddd;
+      margin: 10px 0 20px 0;
+    }
+    
+    .personalHeader h1 {
+      color: #333;
+      font-size: 1.5rem;
+    }
+  
+    .personalContent {
+      padding: 0.5rem 0;
+    }
+    
+    .contact-container, .name-img {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .name-container, .email-container {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+    .personalDetails label {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+      font-weight: bold;
+    }
+    
+    .personalDetails input,
+    .personalDetails textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  
+    .img-container label {
+      color: #555;
+      font-weight: bold;
+    }
+    
+    .img-container input[type="file"] {
+      display: none;
+    }
+    
+    .custom-file-upload {
+      background-color: white;
+      border: 2px solid #486eb9;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;        
+    }
+  
+    .custom-file-upload svg {
+      vertical-align: middle;
+      margin-bottom: 4px; 
+    }
+  
+    .personalHeader svg {
+      vertical-align: middle;
+      padding-bottom: 4px;
+    }
+  
+  
+    #extra-label {
+      margin-top: 5px;
+      font-weight: normal;
+    }
+    
+    .custom-file-upload:hover {
+      background-color: #486eb9;
+      color: #f9f9f9;
+    }
+    
+    
+    .personalDetails .submit-button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .personalDetails .submit-button:hover {
+      background-color: #45a049;
+    }
+  
+    #summary {
+      resize: none;
+    }
+  
