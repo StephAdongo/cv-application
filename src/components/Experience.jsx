@@ -7,7 +7,7 @@ function Experience({ experience, setExperience }) {
   const [editingIndex, setEditingIndex] = useState(null);
 
   const handleChange = (index, e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; 
     const updated = [...experience];
     updated[index][name] = value;
     setExperience(updated);
