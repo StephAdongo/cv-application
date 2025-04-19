@@ -3,7 +3,7 @@ import { Eye, EyeOff, Plus, Check, X, Trash2, GraduationCap, ChevronDown, Chevro
 import '../styles/Education.css';
 
 function Education({education, setEducation}) {
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(false); 
     const [editingIndex, setEditingIndex] = useState(null);
 
     const handleChange = (index,e) => {
