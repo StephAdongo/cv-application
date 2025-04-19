@@ -9,45 +9,45 @@ import Preview from './components/Preview';
 function App() {
   const sampleData = React.useMemo(() => ({
     personalDetails: {
-      fullName: 'Nirob Chowdhury',
-      email: 'nirbo.chowdhury@dummy.com',
-      phoneNumber: '+880123-456-7891',
-      address: 'Shibchar, Madaripur, Bangladesh',
+      fullName: 'Stephanie Jones',
+      email: 'stephjones@gmail.com',
+      phoneNumber: '+254-7123-4567-8',
+      address: 'Eastleigh, Nairobi',
       summary: 'Experienced web developer with a strong background in frontend and backend development.',
       photo: 'default-photo.png',
     },
     education: [
       {
-        degree: 'Bachelor of Arts in English Language and Literture',
-        school: 'Gopalganj Science and Technology University',
+        degree: 'Bachelor in Computer Science',
+        school: 'Kabarak University',
         startDate: '2022',
         endDate: 'Present',
-        location: 'Gopalganj, Dhaka',
+        location: 'Kabarak, Nakuru',
         visible: true
       },
       {
-        degree: 'HSC',
-        school: 'Elias Ahmed Chowdhury Degree College',
-        startDate: '2017',
-        endDate: '2019',
-        location: 'Shibchar, Madaripur',
+        degree: 'Data Science and Machine Learning',
+        school: 'Jomo Kenyatta University',
+        startDate: ' August 2023',
+        endDate: 'December 2023',
+        location: 'Juja, Kiambu',
         visible: true
       },
       {
-        degree: 'SSC',
-        school: 'Shibchar Nanda Kumar Model Institution',
-        startDate: '2015',
-        endDate: 'Feb 2017',
-        location: 'Shibchar',
+        degree: 'ICDL',
+        school: 'Nairobi Institute of Business Studies',
+        startDate: 'June 2021',
+        endDate: 'December 2021',
+        location: 'Nairobi',
         visible: true
       }
     ],
     experience: [
       {
-        title: 'Sr. Full-Stack Software Developer',
-        company: 'Tech Solutions Inc.',
+        title: ' Snr. Full-Stack Software Developer',
+        company: 'Oracle LTD.',
         startDate: 'Present',
-        endDate: '2024',
+        endDate: '2025',
         location: 'Remote',
         description: 'Works on scalable React applications and integrated APIs.',
         visible: true
@@ -55,7 +55,7 @@ function App() {
       {
         title: 'Jr. Software Developer',
         company: 'ABC Tech.',
-        startDate: '2022',
+        startDate: '2024',
         endDate: '2024',
         location: 'Remote',
         description: 'Worked on scalable React applications and integrated APIs.',
@@ -64,8 +64,8 @@ function App() {
       {
         title: 'Freelance Developer',
         company: 'Random',
-        startDate: '2019',
-        endDate: '2022',
+        startDate: '2023',
+        endDate: '2024',
         location: 'Remote',
         description: 'Worked on anything related to programming, software, apps',
         visible: true
@@ -75,13 +75,6 @@ function App() {
   }), []);
 
   const [formData, setFormData] = useState(sampleData);
-
-  useEffect(() => {
-    handleLoadExample();
-  }, [handleLoadExample]);
-  
-
-  const previewRef = useRef();
   const handleDownload = () => {
     const element = previewRef.current;
     const opt = {
@@ -95,9 +88,17 @@ function App() {
     html2pdf().set(opt).from(element).save();
   };
 
+
+  const previewRef = useRef();
+  
+
   const handleLoadExample = React.useCallback(() => {
     setFormData(sampleData);
   }, [sampleData]);
+
+  useEffect(() => {
+    handleLoadExample();
+  }, [handleLoadExample]);
 
   const handleClear = () => {
     setFormData({
